@@ -110,7 +110,23 @@ df = pd.DataFrame(data)
 # print(df.columns) - 
 # it will list all the columns of the df 
 
-print(df.index)-
-it will tell u the range of your index 0 to N by default 
+# print(df.index)-
+# it will tell u the range of your index 0 to N by default 
+
+# print(df.dtypes)
+# Will give You the Data Type of Each Column
+
+
+# print(df.info())
+# Will give u the full summary of Your df
+
+# MOST USED 
+# df.describe();
+# it will give u the statistical summary of numbers only 
+
+
+# print(df.isnull().sum())
+# it will check for the missing values for the df 
+
 
 
