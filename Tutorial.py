@@ -71,7 +71,17 @@ print(df.loc[0])
 
 # suppose this is the dataframe 
 
-df.iloc[0] means the first row that is alice row 
-even though the label is a , but iloc[0] means first row no matter what the label is 
+# df.iloc[0] means the first row that is alice row 
+# even though the label is a , but iloc[0] means first row no matter what the label is 
 
-df.loc['a'] - means that get the row with the label 'a' however output of above and this will be same 
+# df.loc['a'] - means that get the row with the label 'a' however output of above and this will be same 
+
+
+
+# Accessing the Cell means row and column through the loc and the iloc 
+
+# print(df.iloc[1,0])
+# means second row and the first column that is 'Bob'
+
+print(df.loc['b','Name'])
+# Row label 'b', column 'Name' ➝ 'Bob'
