@@ -193,3 +193,7 @@ df = pd.DataFrame(data)
 # ❌ Drop multiple columns:
 # df.drop(['Subject', 'Grade'], axis=1, inplace=True)
 
+
+
+
+📌 Topic 6: Indexing and Resetting Index 
