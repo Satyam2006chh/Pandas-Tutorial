@@ -33,13 +33,8 @@ import numpy as np
 
 # Now Accessing the dataframe parts
 
-data = {'Name': ['John', 'Alice', 'Bob', 'Eve',
-'Charlie'], 
-'Age': [25, 30, 22, 35, 28], 
-'Gender': ['Male', 'Female', 'Male', 'Female', 'Male'], 
-'Salary': [50000, 55000, 40000, 70000, 48000]}
+# 
 
-df = pd.DataFrame(data)
 # print(df)
 
 # to access the age column
@@ -54,8 +49,8 @@ df = pd.DataFrame(data)
 
 # Now accessing the rows of the df
 
-print(df.iloc[0])
-print(df.loc[0])
+# print(df.iloc[0])
+# print(df.loc[0])
 
 # here whats the difference between the loc and the iloc - 
 # iloc -  It uses the integer location where 0 is the first row
@@ -83,9 +78,22 @@ print(df.loc[0])
 # print(df.iloc[1,0])
 # means second row and the first column that is 'Bob'
 
-print(df.loc['b','Name'])
+# print(df.loc['b','Name'])
 # Row label 'b', column 'Name' ➝ 'Bob'
 
 
 
 # Inspecting the data -
+
+# here we r using another dataframe as per as the requirements
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'Age': [24, 27, 22, 32, None],
+    'Marks': [85, 90, 78, None, 88],
+    'Gender': ['F', 'M', 'M', 'M', 'F']
+}
+df = pd.DataFrame(data)
+
+# 1- df.head(n)
+# it will get u the first n rows 
+# by default the value of the n = 5;
