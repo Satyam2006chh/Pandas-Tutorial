@@ -231,5 +231,18 @@ df = pd.DataFrame(data)
 
 🎯 Topic 7: Sorting Data in Pandas
 
+ 1. Sort by Single Column-
+
+df.sort_values('Marks')- 📊 Sorted from lowest to highest marks.
+
+for the descending values  -
+df.sort_values('Marks', ascending=False)
+
+sorting of multiple columns -
+df.sort_values(['Age', 'Marks'])
+
+Multi-column with descending + ascending mix:
+df.sort_values(['Age', 'Marks'], ascending=[True, False])
+
 
 
