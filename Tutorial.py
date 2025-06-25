@@ -85,3 +85,7 @@ print(df.loc[0])
 
 print(df.loc['b','Name'])
 # Row label 'b', column 'Name' ➝ 'Bob'
+
+
+
+# Inspecting the data -
