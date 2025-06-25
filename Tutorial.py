@@ -159,3 +159,8 @@ df = pd.DataFrame(data)
 
 # 📌 Using .query() – Cleaner Syntax for Conditions
 # df.query("Marks > 80 and Subject == 'Math'")
+
+
+
+
+# 🧩 Topic 5: Adding, Updating, and Deleting Columns
