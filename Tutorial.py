@@ -43,12 +43,35 @@ df = pd.DataFrame(data)
 # print(df)
 
 # to access the age column
-age_column = df["Age"]
-print(age_column)
+
+
+# age_column = df["Age"]
+# print(age_column)
 
 # if want to access multiple columns at a time 
 
-print(df[['Name', 'Age']])
+# print(df[['Name', 'Age']])
+
+# Now accessing the rows of the df
+
+print(df.iloc[0])
+print(df.loc[0])
+
+# here whats the difference between the loc and the iloc - 
+# iloc -  It uses the integer location where 0 is the first row
+# loc - It uses the label location 
+# where 0 is the row with index 0
 
 
+# to understand better of the iloc and the loc 
 
+# a   Alice     85
+# b     Bob     92
+# c Charlie     78
+
+# suppose this is the dataframe 
+
+df.iloc[0] means the first row that is alice row 
+even though the label is a , but iloc[0] means first row no matter what the label is 
+
+df.loc['a'] - means that get the row with the label 'a' however output of above and this will be same 
