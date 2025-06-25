@@ -144,3 +144,18 @@ df = pd.DataFrame(data)
 
 
 # Filtering Of data using Conditions in df 
+# ✅ Students with marks > 80
+# df[df['Marks'] > 80]
+
+# ✅ Students who study Math
+# df[df['Subject'] == 'Math']
+
+# 🔗 AND Condition: Both must be True
+# df[(df['Marks'] > 80) & (df['Gender'] == 'M')]
+
+# 🔗 OR Condition: At least one must be True
+# df[(df['Marks'] > 90) | (df['Subject'] == 'Math')]
+
+
+# 📌 Using .query() – Cleaner Syntax for Conditions
+# df.query("Marks > 80 and Subject == 'Math'")
