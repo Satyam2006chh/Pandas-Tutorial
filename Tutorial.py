@@ -97,3 +97,12 @@ df = pd.DataFrame(data)
 # 1- df.head(n)
 # it will get u the first n rows 
 # by default the value of the n = 5;
+
+# 2- df.tail(n)
+# it will give u the last n rows 
+
+# print(df.shape)
+# it will give u the size of the df
+# means for the above df it will give u the output as (5,4)
+# where 5 is rows and 4 is columns 
+
