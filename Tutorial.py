@@ -245,4 +245,14 @@ Multi-column with descending + ascending mix:
 df.sort_values(['Age', 'Marks'], ascending=[True, False])
 
 
+Sort by Index--
 
+df.sort_index() - Ascending
+
+df.sort_index(ascending=False) - Descending 
+
+# The most important point 
+
+Sort In-Place (modify original DataFrame)
+
+df.sort_values('Marks', ascending=False, inplace=True)
