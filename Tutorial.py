@@ -96,9 +96,6 @@ import numpy as np
 
 
 
-
-
-
 # Inspecting the data -
 
 # here we r using another dataframe as per as the requirements
@@ -146,3 +143,4 @@ df = pd.DataFrame(data)
 
 
 
+# Filtering Of data using Conditions in df 
