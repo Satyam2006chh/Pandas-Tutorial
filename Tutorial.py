@@ -106,3 +106,11 @@ df = pd.DataFrame(data)
 # means for the above df it will give u the output as (5,4)
 # where 5 is rows and 4 is columns 
 
+
+# print(df.columns) - 
+# it will list all the columns of the df 
+
+print(df.index)-
+it will tell u the range of your index 0 to N by default 
+
+
