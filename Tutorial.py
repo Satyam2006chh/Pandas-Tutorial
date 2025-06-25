@@ -196,7 +196,7 @@ df = pd.DataFrame(data)
 
 
 
-📌 Topic 6: Indexing and Resetting Index 
+# 📌 Topic 6: Indexing and Resetting Index 
 
 # Now when we make a excel sheet basically there r the values like the 0,1,2--- and so on which r the indexes and now You wnt that a particular field in Your table must be inplace of the index means index  = 'Name' where Name is the column name 
 
@@ -222,5 +222,14 @@ df = pd.DataFrame(data)
 
 # df.reset_index(inplace=True)
 # print(df)
+
+
+
+# --------------------------------------------------------
+
+
+
+🎯 Topic 7: Sorting Data in Pandas
+
 
 
