@@ -99,13 +99,13 @@ import numpy as np
 # Inspecting the data -
 
 # here we r using another dataframe as per as the requirements
-data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
-    'Age': [24, 27, 22, 32, None],
-    'Marks': [85, 90, 78, None, 88],
-    'Gender': ['F', 'M', 'M', 'M', 'F']
-}
-df = pd.DataFrame(data)
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+#     'Age': [24, 27, 22, 32, None],
+#     'Marks': [85, 90, 78, None, 88],
+#     'Gender': ['F', 'M', 'M', 'M', 'F']
+# }
+# df = pd.DataFrame(data)
 
 # 1- df.head(n)
 # it will get u the first n rows 
@@ -164,3 +164,32 @@ df = pd.DataFrame(data)
 
 
 # 🧩 Topic 5: Adding, Updating, and Deleting Columns
+
+
+# Here we will use the new df
+
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Marks': [85, 92, 78, 88]
+}
+df = pd.DataFrame(data)
+
+# Adding New column in df
+# df['Subject'] = ['Math', 'Science', 'English', 'Math']
+
+# ➕ Add a column with same value
+# df['Passed'] = True
+
+# 🎯 Increase marks by 5 for all students
+# df['Marks'] = df['Marks'] + 5
+
+# Now the most important part  - IS TO DROP A COLUMN
+
+# df.drop('Passed', axis=1, inplace=True) 
+# axis = 1 means column
+# axis = 0 means row 
+# if u dont write inplace  = True then after the drop command if u print the df it will again show u the dropped column so do inplace = true 
+
+# ❌ Drop multiple columns:
+# df.drop(['Subject', 'Grade'], axis=1, inplace=True)
+
