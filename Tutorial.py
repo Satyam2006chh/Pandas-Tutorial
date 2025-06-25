@@ -197,3 +197,30 @@ df = pd.DataFrame(data)
 
 
 📌 Topic 6: Indexing and Resetting Index 
+
+# Now when we make a excel sheet basically there r the values like the 0,1,2--- and so on which r the indexes and now You wnt that a particular field in Your table must be inplace of the index means index  = 'Name' where Name is the column name 
+
+# df.set_index('Name', inplace=True)
+# print(df)
+
+# for ex this -  Here Name is index 
+#          Marks
+# Name           
+# Alice       85
+# Bob         92
+# Charlie     78
+# David       88
+
+# df.loc['Bob'] - This is valid now as 'Bob' is now the index 
+
+# Output - 
+# Marks    92
+# Name: Bob, dtype: int64
+
+
+# Now to make the index back to 0,1,2,3.... and so on
+
+# df.reset_index(inplace=True)
+# print(df)
+
+
