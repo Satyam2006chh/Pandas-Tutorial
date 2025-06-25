@@ -82,6 +82,22 @@ import numpy as np
 # Row label 'b', column 'Name' ➝ 'Bob'
 
 
+# df.iloc[1:3]
+# rows at index 1 and 2 
+
+
+# df.loc[1:3]
+# rows at index 1 and 2 and 3 too
+
+
+
+# Conditional Accessing 
+# df[(df['Marks'] > 80) & (df['Gender'] == 'M')]
+
+
+
+
+
 
 # Inspecting the data -
 
