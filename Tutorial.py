@@ -229,30 +229,35 @@ df = pd.DataFrame(data)
 
 
 
-🎯 Topic 7: Sorting Data in Pandas
+# 🎯 Topic 7: Sorting Data in Pandas
 
- 1. Sort by Single Column-
+#  1. Sort by Single Column-
 
-df.sort_values('Marks')- 📊 Sorted from lowest to highest marks.
+# df.sort_values('Marks')- 📊 Sorted from lowest to highest marks.
 
-for the descending values  -
-df.sort_values('Marks', ascending=False)
+# for the descending values  -
+# df.sort_values('Marks', ascending=False)
 
-sorting of multiple columns -
-df.sort_values(['Age', 'Marks'])
+# sorting of multiple columns -
+# df.sort_values(['Age', 'Marks'])
 
-Multi-column with descending + ascending mix:
-df.sort_values(['Age', 'Marks'], ascending=[True, False])
+# Multi-column with descending + ascending mix:
+# df.sort_values(['Age', 'Marks'], ascending=[True, False])
 
 
-Sort by Index--
+# Sort by Index--
 
-df.sort_index() - Ascending
+# df.sort_index() - Ascending
 
-df.sort_index(ascending=False) - Descending 
+# df.sort_index(ascending=False) - Descending 
 
-# The most important point 
+# # The most important point 
 
-Sort In-Place (modify original DataFrame)
+# Sort In-Place (modify original DataFrame)
 
-df.sort_values('Marks', ascending=False, inplace=True)
+# df.sort_values('Marks', ascending=False, inplace=True)
+
+
+# --------------------------------------------------------
+
+# 🎯 GOAL: Learn how to rename column names and row indexes with rename(), columns=, and index=
