@@ -438,3 +438,31 @@ import numpy as np
 # Clean messy data
 # Use if-else, math, text ops, etc.
 # Apply your own functions row-wise or column-wise
+
+# Sample df
+df = pd.DataFrame({
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Marks': [92, 76, 89, 60]
+})
+
+# 🔹 1. Apply a Lambda Function to a Column
+# ✅ Add a column 'Result' with Pass/Fail logic:
+
+# df['Resultt'] = df['Marks'].apply(lambda x:'Pass' if x>=75 else 'Fail')
+# print(df)
+
+
+# 🔹 2. Create a Grading System
+# def get_grade(m):
+#     if m >= 90:
+#         return 'A'
+#     elif m >= 80:
+#         return 'B'
+#     elif m >= 70:
+#         return 'C'
+#     else:
+#         return 'D'
+    
+# df['Grade'] = df['Marks'].apply(get_grade)
+# print(df)
+
