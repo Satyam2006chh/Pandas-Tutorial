@@ -481,3 +481,25 @@ df = pd.DataFrame({
 # 🔹 5. Use .map() (shortcut for single-column transformation)/
 # df['Result'] = df['Marks'].map(lambda x: 'Pass' if x > 75 else 'Fail')
 
+
+# ===========================================
+
+
+# Duplicate rows = same data multiple times
+# And that means:
+
+# Wrong average
+# Wrong counts
+# Fake outliers
+# Bad analysis
+
+# So your job? Detect + Remove like a pro 🧼
+
+import pandas as pd
+
+data = {
+    'Name': ['Aman', 'Bobby', 'Aman', 'Divya', 'Eva', 'Eva'],
+    'Subject': ['Math', 'Science', 'Math', 'Math', 'Science', 'Science'],
+    'Marks': [85, 90, 85, 67, 88, 88]
+}
+df = pd.DataFrame(data)
