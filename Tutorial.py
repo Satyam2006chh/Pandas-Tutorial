@@ -581,3 +581,6 @@ df = pd.DataFrame({
 # 👉 Find min & max marks for each subject:
 
 # df.groupby('Subject')['Marks'].agg(['min', 'max'])
+
+
+# Completed 
