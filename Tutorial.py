@@ -168,11 +168,11 @@ import numpy as np
 
 # Here we will use the new df
 
-data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
-    'Marks': [85, 92, 78, 88]
-}
-df = pd.DataFrame(data)
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+#     'Marks': [85, 92, 78, 88]
+# }
+# df = pd.DataFrame(data)
 
 # Adding New column in df
 # df['Subject'] = ['Math', 'Science', 'English', 'Math']
@@ -261,3 +261,38 @@ df = pd.DataFrame(data)
 # --------------------------------------------------------
 
 # 🎯 GOAL: Learn how to rename column names and row indexes with rename(), columns=, and index=
+
+# FOR THIS WE R USING Another DF-
+
+data = {
+    'StudID': [101, 102, 103],
+    'Name ': ['Aman', 'Bobby', 'Chetan'],   # Notice extra space!
+    'Marks': [76, 89, 91]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+
+# 'Name ' has a space 😒
+# StudID is maybe better as ID
+
+# To basicaLLY rename a specific column
+
+# df.rename(columns={'StudID': 'ID', 'Name ': 'Name'}, inplace=True)
+# print(df)
+
+
+# to rename everything in one go for the columns
+# df.columns = ['Student_ID', 'Student_Name', 'Score']
+
+
+
+# Remove Spaces from All Column Names (Super Hack)
+# df.columns = df.columns.str.strip()
+# print(df)
+
+
+# To rename the indexes
+# df.index = ['Roll_1', 'Roll_2','Roll_3']
+# print(df)
