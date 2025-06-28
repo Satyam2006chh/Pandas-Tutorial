@@ -548,3 +548,36 @@ df = pd.DataFrame({
 
 # =================================
 #  Summary Stats & Aggregations (like mean(), sum(), groupby())
+
+
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+#     'Marks': [85, 92, 78, 88, 60],
+#     'Subject': ['Math', 'Science', 'English', 'Math', 'Science'],
+#     'Gender': ['F', 'M', 'M', 'M', 'F']
+# }
+
+# df = pd.DataFrame(data)
+# print(df)
+
+# df['Marks'].mean()     # Average
+# df['Marks'].sum()      # Total
+# df['Marks'].max()      # Highest
+# df['Marks'].min()      # Lowest
+# df['Marks'].count()    # Number of entries
+
+
+# 👉 Average marks by subject:
+# df.groupby('Subject')['Marks'].mean()
+
+# 👉 Total marks by gender:
+# df.groupby('Gender')['Marks'].sum()
+
+#  Group by Multiple Columns
+# df.groupby(['Gender', 'Subject'])['Marks'].mean()
+
+
+# Once with .agg()
+# 👉 Find min & max marks for each subject:
+
+# df.groupby('Subject')['Marks'].agg(['min', 'max'])
