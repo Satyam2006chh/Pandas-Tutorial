@@ -495,14 +495,13 @@ df = pd.DataFrame({
 
 # So your job? Detect + Remove like a pro 🧼
 
-import pandas as pd
 
-data = {
-    'Name': ['Aman', 'Bobby', 'Aman', 'Divya', 'Eva', 'Eva'],
-    'Subject': ['Math', 'Science', 'Math', 'Math', 'Science', 'Science'],
-    'Marks': [85, 90, 85, 67, 88, 88]
-}
-df = pd.DataFrame(data)
+# data = {
+#     'Name': ['Aman', 'Bobby', 'Aman', 'Divya', 'Eva', 'Eva'],
+#     'Subject': ['Math', 'Science', 'Math', 'Math', 'Science', 'Science'],
+#     'Marks': [85, 90, 85, 67, 88, 88]
+# }
+# df = pd.DataFrame(data)
 
 # print(df.duplicated()) - return true for the duplicates 
 # print(df[df.duplicated()]) - shows only duplicates 
@@ -522,4 +521,12 @@ df = pd.DataFrame(data)
 # python
 # Copy code
 
-df.drop_duplicates(subset=['Name', 'Subject'], keep='first')
+# df.drop_duplicates(subset=['Name', 'Subject'], keep='first')
+
+
+
+# -===============================
+
+
+# 📁 Topic 17: Importing & Exporting CSV / Excel Files in Pandas
+
