@@ -384,17 +384,17 @@ import numpy as np
 # And your job?
 # Combine it all together like a boss 💪🐼
 
-import pandas as pd
 
-df1 = pd.DataFrame({
-    'ID': [1, 2, 3],
-    'Name': ['Alice', 'Bob', 'Charlie']
-})
 
-df2 = pd.DataFrame({
-    'ID': [4, 5],
-    'Name': ['David', 'Eva']
-})
+# df1 = pd.DataFrame({
+#     'ID': [1, 2, 3],
+#     'Name': ['Alice', 'Bob', 'Charlie']
+# })
+
+# df2 = pd.DataFrame({
+#     'ID': [4, 5],
+#     'Name': ['David', 'Eva']
+# })
 
 # 🔹 1. Concatenation – Combine Vertically (Stacking)
 
@@ -402,3 +402,32 @@ df2 = pd.DataFrame({
 # ignore_index=True gives clean index from 0
 
 # otherwise index will look like - 0,1,2,0,1
+
+
+# 🔸 Horizontal Concatenation (side by side)
+# print(pd.concat([df1, df2], axis=1))
+# ⚠️ Rows must match in count, or you'll get NaN.
+
+
+
+# 🔹 2. Merging – Combine on a Key (Like SQL Join)\
+
+# students = pd.DataFrame({
+#     'ID': [1, 2, 3],
+#     'Name': ['Alice', 'Bob', 'Charlie']
+# })
+
+# scores = pd.DataFrame({
+#     'ID': [1, 2, 3],
+#     'Marks': [85, 92, 78]
+# })
+
+# merged = pd.merge(students, scores, on='ID')
+# print(merged)
+
+
+
+# =============================================
+
+
+# 🧠 Topic 12: Applying Functions with .apply() and lambda
