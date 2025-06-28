@@ -264,14 +264,14 @@ import numpy as np
 
 # FOR THIS WE R USING Another DF-
 
-data = {
-    'StudID': [101, 102, 103],
-    'Name ': ['Aman', 'Bobby', 'Chetan'],   # Notice extra space!
-    'Marks': [76, 89, 91]
-}
+# data = {
+#     'StudID': [101, 102, 103],
+#     'Name ': ['Aman', 'Bobby', 'Chetan'],   # Notice extra space!
+#     'Marks': [76, 89, 91]
+# }
 
-df = pd.DataFrame(data)
-print(df)
+# df = pd.DataFrame(data)
+# print(df)
 
 
 # 'Name ' has a space 😒
@@ -296,3 +296,11 @@ print(df)
 # To rename the indexes
 # df.index = ['Roll_1', 'Roll_2','Roll_3']
 # print(df)
+
+
+
+# -------------------------
+
+
+
+# Handling Missing Data (NaN)
