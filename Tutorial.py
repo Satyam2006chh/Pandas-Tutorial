@@ -466,3 +466,18 @@ df = pd.DataFrame({
 # df['Grade'] = df['Marks'].apply(get_grade)
 # print(df)
 
+
+# 🔹 3. Apply on Multiple Columns (Use axis=1)
+# df['Info'] = df.apply(lambda row: f"{row['Name']} scored {row['Marks']}", axis=1)
+
+
+
+# 🔹 4. Modify String Columns
+# ✅ Converts all names to uppercase.
+
+# df['Name'] = df['Name'].apply(lambda x: x.upper())
+
+
+# 🔹 5. Use .map() (shortcut for single-column transformation)/
+# df['Result'] = df['Marks'].map(lambda x: 'Pass' if x > 75 else 'Fail')
+
