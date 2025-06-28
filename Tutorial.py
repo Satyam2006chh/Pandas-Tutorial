@@ -304,3 +304,69 @@ import numpy as np
 
 
 # Handling Missing Data (NaN)
+
+
+
+# Real data is NEVER clean. You’ll always run into:
+
+# Blank cells
+# NULL values
+# NaN (Not a Number)
+# Corrupted / incomplete data
+
+# Handling this properly is the first step in real data science.
+
+
+import pandas as pd
+import numpy as np
+
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'Marks': [85, np.nan, 78, 88, np.nan],
+    'Subject': ['Math', 'Science', 'English', np.nan, 'Science']
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+# You can see:
+
+# Bob & Eva have missing marks
+# David has no subject
+
+# Now to detect the missing data 
+
+# print(df.isnull())
+# it will  return true whereever the data is missing 
+
+# print(df.isnull().sum())
+# Count total missing in each column:
+
+# To drop the missing data - along the rows 
+# print(df.dropna())
+
+
+# To drop the missing data - along the columns
+# print(df.dropna(axis=1))
+
+
+# 🧃Fill Missing Data (Imputation)
+# df['Marks'].fillna(0, inplace=True)
+# print(df)
+
+
+# Fill missing marks with column average:
+# avg= df['Marks'].mean()
+# df['Marks'].fillna(avg,inplace=True)
+# print(df)
+
+# 🔹 Forward Fill (fill with previous row’s value):
+# df.fillna(method='ffill', inplace=True)
+# print(df)
+
+# Backward Fill:
+# df.fillna(method='bfill', inplace=True)
+
+# 🧠 4. Replace Specific Values (Not just NaN)
+# df.replace('Science', 'Sci', inplace=True)
+# print(df)
