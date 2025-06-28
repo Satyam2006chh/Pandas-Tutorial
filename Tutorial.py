@@ -317,17 +317,14 @@ import numpy as np
 # Handling this properly is the first step in real data science.
 
 
-import pandas as pd
-import numpy as np
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+#     'Marks': [85, np.nan, 78, 88, np.nan],
+#     'Subject': ['Math', 'Science', 'English', np.nan, 'Science']
+# }
 
-data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
-    'Marks': [85, np.nan, 78, 88, np.nan],
-    'Subject': ['Math', 'Science', 'English', np.nan, 'Science']
-}
-
-df = pd.DataFrame(data)
-print(df)
+# df = pd.DataFrame(data)
+# print(df)
 
 # You can see:
 
@@ -376,3 +373,32 @@ print(df)
 # ====================================
 
 # 🧩 Topic 11: Combining DataFrames (Concatenation + Merging)\
+
+# Real projects? Real datasets? They never come in one nice table.
+# You’ll often have data:
+
+# Split across files
+# Spread in multiple sheets
+# In multiple related tables
+
+# And your job?
+# Combine it all together like a boss 💪🐼
+
+import pandas as pd
+
+df1 = pd.DataFrame({
+    'ID': [1, 2, 3],
+    'Name': ['Alice', 'Bob', 'Charlie']
+})
+
+df2 = pd.DataFrame({
+    'ID': [4, 5],
+    'Name': ['David', 'Eva']
+})
+
+# 🔹 1. Concatenation – Combine Vertically (Stacking)
+
+# print(pd.concat([df1, df2], ignore_index=True))
+# ignore_index=True gives clean index from 0
+
+# otherwise index will look like - 0,1,2,0,1
