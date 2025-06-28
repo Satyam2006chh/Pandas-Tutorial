@@ -503,3 +503,23 @@ data = {
     'Marks': [85, 90, 85, 67, 88, 88]
 }
 df = pd.DataFrame(data)
+
+# print(df.duplicated()) - return true for the duplicates 
+# print(df[df.duplicated()]) - shows only duplicates 
+
+# to drop the duplicates 
+# df.drop_duplicates(inplace=True)
+# print(df)
+
+
+# 🎯 Remove Duplicates Based on Specific Columns
+# Let’s say:
+
+# Same name is OK
+
+# But same Name + Subject + Marks = Duplicate
+
+# python
+# Copy code
+
+df.drop_duplicates(subset=['Name', 'Subject'], keep='first')
