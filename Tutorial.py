@@ -431,3 +431,10 @@ import numpy as np
 
 
 # 🧠 Topic 12: Applying Functions with .apply() and lambda
+
+# ✅ You can:
+
+# Create new columns with logic
+# Clean messy data
+# Use if-else, math, text ops, etc.
+# Apply your own functions row-wise or column-wise
