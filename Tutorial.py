@@ -530,3 +530,16 @@ df = pd.DataFrame({
 
 # 📁 Topic 17: Importing & Exporting CSV / Excel Files in Pandas
 
+#  1. Import CSV File
+# df = pd.read_csv('data.csv')
+
+# 🧾 2. Export (Save) to CSV
+# df.to_csv('cleaned_data.csv', index=False)
+# index=False = don’t save the row numbers
+# ✅ Use this to save your final DataFrame
+
+# Export to excel -
+# df.to_excel('output.xlsx', index=False)
+
+# Reading the excel
+# df = pd.read_excel('marks.xlsx')
